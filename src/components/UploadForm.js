@@ -5,7 +5,7 @@ const UploadForm = () => {
   const [file, setFile] = useState(null);
   const [uploadError, setUploadError] = useState(null);
 
-  const changeHandler = (e) => {
+  const handleChange = (e) => {
     let selected = e.target.files[0];
 
     const allowedTypes = ["image/png", "image/jpeg"];
@@ -21,7 +21,10 @@ const UploadForm = () => {
 
   return (
     <form>
-      <input type="file" onChange={changeHandler} />
+      <label>
+        <input type="file" onChange={handleChange} />
+        <span>+</span>
+      </label>
       <div className="output">
         {uploadError && <div className="error">{uploadError}</div>}
         {file && <div className="success">{file.name}</div>}
