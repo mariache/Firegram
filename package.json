@@ -6,11 +6,11 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.0.4",
     "@testing-library/user-event": "^12.1.6",
-    "firebase": "^7.22.0",
+    "firebase": "^8.0.1",
     "framer-motion": "^2.7.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
